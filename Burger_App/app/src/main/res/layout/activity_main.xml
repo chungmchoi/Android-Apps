@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="36dp"
+        android:background="#238718"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        tools:layout_editor_absoluteX="0dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="80dp"
+        android:background="#238718"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="0dp"></LinearLayout>
+
+    <CheckBox
+        android:id="@+id/WhiteBun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="116dp"
+        android:text="White Bun"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/WheatBun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="Wheat Bun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/Beef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Beef"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <CheckBox
+        android:id="@+id/GrilledChicken"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginRight="97dp"
+        android:text="Grilled Chicken"
+        app:layout_constraintEnd_toEndOf="@+id/Turkey"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/WhiteBun"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <CheckBox
+        android:id="@+id/Salmon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:text="Salmon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <CheckBox
+        android:id="@+id/Turkey"
+        android:layout_width="77dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:text="Turkey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <CheckBox
+        android:id="@+id/Mustard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:text="Mustard"
+        app:layout_constraintStart_toEndOf="@+id/Mayo"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+    <CheckBox
+        android:id="@+id/Lettuce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="Lettuce"
+        app:layout_constraintEnd_toStartOf="@+id/Tomato"
+        app:layout_constraintStart_toEndOf="@+id/Mushroom"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <CheckBox
+        android:id="@+id/Tomato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Tomato"
+        app:layout_constraintEnd_toStartOf="@+id/Pickles"
+        app:layout_constraintStart_toEndOf="@+id/Lettuce"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <CheckBox
+        android:id="@+id/Pickles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:text="Pickles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Tomato"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <CheckBox
+        android:id="@+id/Mushroom"
+        android:layout_width="117dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Sautéed mushrooms"
+        app:layout_constraintBottom_toBottomOf="@+id/Lettuce"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Lettuce"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/Mayo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Mayo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+    <CheckBox
+        android:id="@+id/Veggie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:text="Veggie"
+        app:layout_constraintBottom_toBottomOf="@+id/Salmon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mustard" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="78dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="total"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="69dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="calories"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="222dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="The Burger Builder"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="259dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:text="Step 1: pick a bun (select only 1)"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="79dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/whitebun" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="92dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/wheatbun" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Step 2: pick a patty (select only 1)"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/WheatBun"
+        app:layout_constraintTop_toBottomOf="@+id/WhiteBun" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="73dp"
+        android:layout_height="34dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/beef" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="72dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/Beef"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/chicken" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="51dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/calculate"
+        app:layout_constraintStart_toEndOf="@+id/GrilledChicken"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/turkey" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="80dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/Salmon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Beef"
+        app:srcCompat="@drawable/salmon" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="76dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/GrilledChicken"
+        app:layout_constraintTop_toBottomOf="@+id/GrilledChicken"
+        app:srcCompat="@drawable/veggie" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Step 3: pick between 0 and 3 toppings."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Veggie" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="65dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/Mushroom"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="@+id/Mushroom"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/mushroom" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="68dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@+id/Mushroom"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/lettuce" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="87dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginRight="105dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/Tomato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Mushroom"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tomato" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="72dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView15"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pickles" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="47dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Mayo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mushroom"
+        app:layout_constraintVertical_bias="0.423"
+        app:srcCompat="@drawable/mayo" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Lettuce"
+        app:srcCompat="@drawable/mustard" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        android:text="Number of Burgers:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mayo" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:text="Total Cost:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Total Calories:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="436dp"
+        android:layout_height="72dp"
+        app:srcCompat="@drawable/lines"
+        tools:layout_editor_absoluteX="-25dp"
+        tools:layout_editor_absoluteY="715dp" />
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="32dp"
+        android:background="#238718"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@+id/Veggie"
+        tools:layout_editor_absoluteX="1dp"></LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/apple"
+        android:layout_width="116dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Apple($2.49/lbs)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/orange"
+        android:layout_width="116dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="96dp"
+        android:text="Orange($4.99/lbs)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/qapple"
+        android:layout_width="25dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="40dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/applep"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/qorange"
+        android:layout_width="25dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="35dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/orangep"
+        app:layout_constraintTop_toBottomOf="@+id/qapple" />
+
+    <TextView
+        android:id="@+id/wallet"
+        android:layout_width="74dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="20dp"
+        android:text="Wallet:$"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purchase" />
+
+    <TextView
+        android:id="@+id/funds"
+        android:layout_width="62dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purchase" />
+
+    <Button
+        android:id="@+id/applep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/apple"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/orangep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/orange"
+        app:layout_constraintTop_toBottomOf="@+id/applep" />
+
+    <Button
+        android:id="@+id/applem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginLeft="304dp"
+        android:layout_marginTop="24dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/orangem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginLeft="304dp"
+        android:layout_marginTop="84dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/purchase"
+        android:layout_width="410dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="28dp"
+        android:text="Purchase"
+        app:layout_constraintTop_toBottomOf="@+id/orangep"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

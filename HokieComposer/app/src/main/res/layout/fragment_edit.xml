@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".DetailFragment">
+
+        <Button
+                android:id="@+id/play"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:text="Play"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/soundSeek3" />
+
+        <TextView
+                android:id="@+id/music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/play" />
+
+    <TextView
+            android:id="@+id/SelectBackgroundMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Background Music"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/SelectSoundEffects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Select Sound Effects"
+                android:textColor="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_option" />
+
+        <SeekBar
+            android:id="@+id/soundSeek1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sound1_option" />
+
+    <SeekBar
+            android:id="@+id/soundSeek2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sound2_option" />
+
+        <SeekBar
+                android:id="@+id/soundSeek3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sound3_option" />
+
+        <Spinner
+            android:id="@+id/background_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SelectBackgroundMusic" />
+
+    <Spinner
+            android:id="@+id/sound1_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SelectSoundEffects" />
+
+    <Spinner
+            android:id="@+id/sound2_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundSeek1" />
+
+    <Spinner
+            android:id="@+id/sound3_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundSeek2" />
+
+        <TextView
+                android:id="@+id/delay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                app:layout_constraintEnd_toStartOf="@+id/soundSeek1"
+                app:layout_constraintTop_toTopOf="@+id/soundSeek1" />
+
+        <TextView
+                android:id="@+id/delay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                app:layout_constraintEnd_toStartOf="@+id/soundSeek2"
+                app:layout_constraintTop_toTopOf="@+id/soundSeek2" />
+
+        <TextView
+                android:id="@+id/delay3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                app:layout_constraintEnd_toStartOf="@+id/soundSeek3"
+                app:layout_constraintTop_toTopOf="@+id/soundSeek3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+
+
+

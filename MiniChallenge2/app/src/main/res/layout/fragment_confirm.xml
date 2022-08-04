@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirm">
+
+    <TextView
+        android:id="@+id/confirmtext"
+        android:layout_width="344dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:text="This purchase will cost you $. Proceed?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/purchase2"
+        android:layout_width="410dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:text="Purchase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmtext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

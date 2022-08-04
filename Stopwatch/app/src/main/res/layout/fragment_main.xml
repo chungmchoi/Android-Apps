@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainFragment" >
+
+    <TextView
+        android:id="@+id/colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginLeft="196dp"
+        android:text=":"
+        android:textSize="72sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lap"
+        android:layout_width="201dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="LAP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="201dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="CANCEL LAP"
+        app:layout_constraintStart_toEndOf="@+id/lap"
+        app:layout_constraintTop_toBottomOf="@+id/start" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="201dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="CLEAR SAVED LAP(S)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lap" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="201dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="RESET TIMER"
+        app:layout_constraintStart_toEndOf="@+id/clear"
+        app:layout_constraintTop_toBottomOf="@+id/cancel" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:text="START"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colon" />
+
+    <Button
+        android:id="@+id/viewLap"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="240dp"
+        android:text="VIEW LAP LIST >>"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear" />
+
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="72sp"
+        app:layout_constraintEnd_toStartOf="@+id/colon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="72sp"
+        app:layout_constraintStart_toEndOf="@+id/colon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shop_Laptop</string>
+
+    <string-array name="computers">
+        <item>HP</item>
+        <item>Lenovo</item>
+    </string-array>
+
+    <string name="price">$300</string>
+    <string name="price2">$500</string>
+    <string name="price3">$700</string>
+    <string name="price4">$330</string>
+    <string name="price5">$550</string>
+    <string name="price6">$770</string>
+
+</resources>

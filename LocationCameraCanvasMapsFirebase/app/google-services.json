@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "25597465354",
+    "firebase_url": "https://banded-acronym-237015.firebaseio.com",
+    "project_id": "banded-acronym-237015",
+    "storage_bucket": "banded-acronym-237015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25597465354:android:1430ca3bbf5c8ac48da0f3",
+        "android_client_info": {
+          "package_name": "com.example.t06"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25597465354-fi7hg0mnrdr2s9f1cgpbds1bnenrskm1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.t06",
+            "certificate_hash": "d8d7235458ddd35bb36ac0868a03397ea51a6874"
+          }
+        },
+        {
+          "client_id": "25597465354-o23v4vhmf4lmhrttpf5diormma6c6lf2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgY0ozhi1VpVRy7s6f_OE3tzDVRmdd79w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25597465354-o23v4vhmf4lmhrttpf5diormma6c6lf2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
